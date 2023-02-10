@@ -25,6 +25,7 @@ const nextClient = noteNumber => getConnectedClients()[Math.floor(noteNumber / (
 var keyNameMap = require('./key-map.json');
 var MidiPlayer = require('midi-player-js');
 var Player = new MidiPlayer.Player(function(event) {
+    setTimeout(Player.playLoop.bind(Player), 0);
     if (
         event.name == 'Note off' ||
         (event.name == 'Note on' && event.velocity === 0)
