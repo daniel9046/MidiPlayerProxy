@@ -31,7 +31,7 @@ var Player = new MidiPlayer.Player(function(event) {
     ) {
         nextClient(event.noteNumber).stopNote(keyNameMap[event.noteName]);
     } else if (event.name == 'Note on') {
-        nextClient(event.noteNumber).startNote(keyNameMap[event.noteName], event.velocity / 100); 
+        nextClient(event.noteNumber).startNote(keyNameMap[event.noteName], event.velocity / 127); 
     } else if (event.name == 'Set Tempo') {
         Player.setTempo(event.data);
     }
@@ -42,7 +42,7 @@ client2.setChannel("test/fishing");
 client2.start();
 client2.on('hi',() => {
     setTimeout(function(){
-        Player.loadFile("D:/midis/BlackMidis/[BLACK MIDI]Rainbow Tylenol.mid");
+        Player.loadFile("D:/midis/BlackMidis/[BLACK MIDI] jinjenia redzone black.mid");
         Player.play();
     },1000)
 })
