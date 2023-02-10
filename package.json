@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "events": "^3.3.0",
+    "fs": "^0.0.1-security",
+    "https-proxy-agent": "^5.0.1",
+    "midi-player-js": "^2.0.16",
+    "proxy-verifier": "^0.5.0",
+    "socks": "^1.1.10",
+    "socks-proxy-agent": "^1.0.2",
+    "superagent": "^8.0.0",
+    "uniqid": "^5.4.0",
+    "ws": "^8.7.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
